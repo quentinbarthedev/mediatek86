@@ -33,21 +33,21 @@
             this.btnModifier = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnAbsences = new System.Windows.Forms.Button();
-            this.grpPersonnel = new System.Windows.Forms.GroupBox();
-            this.lblNom = new System.Windows.Forms.Label();
-            this.lblPrenom = new System.Windows.Forms.Label();
-            this.lblTel = new System.Windows.Forms.Label();
-            this.txtNom = new System.Windows.Forms.TextBox();
-            this.txtPrenom = new System.Windows.Forms.TextBox();
-            this.txtTel = new System.Windows.Forms.TextBox();
-            this.lblMail = new System.Windows.Forms.Label();
-            this.txtMail = new System.Windows.Forms.TextBox();
-            this.lblService = new System.Windows.Forms.Label();
-            this.cboService = new System.Windows.Forms.ComboBox();
-            this.btnEnregistrer = new System.Windows.Forms.Button();
+            this.grbPersonnel = new System.Windows.Forms.GroupBox();
             this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnEnregistrer = new System.Windows.Forms.Button();
+            this.cboService = new System.Windows.Forms.ComboBox();
+            this.lblService = new System.Windows.Forms.Label();
+            this.txtMail = new System.Windows.Forms.TextBox();
+            this.lblMail = new System.Windows.Forms.Label();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.txtPrenom = new System.Windows.Forms.TextBox();
+            this.txtNom = new System.Windows.Forms.TextBox();
+            this.lblTel = new System.Windows.Forms.Label();
+            this.lblPrenom = new System.Windows.Forms.Label();
+            this.lblNom = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonnel)).BeginInit();
-            this.grpPersonnel.SuspendLayout();
+            this.grbPersonnel.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvPersonnel
@@ -96,116 +96,26 @@
             this.btnAbsences.Text = "Gérer les absences";
             this.btnAbsences.UseVisualStyleBackColor = true;
             // 
-            // grpPersonnel
+            // grbPersonnel
             // 
-            this.grpPersonnel.Controls.Add(this.btnAnnuler);
-            this.grpPersonnel.Controls.Add(this.btnEnregistrer);
-            this.grpPersonnel.Controls.Add(this.cboService);
-            this.grpPersonnel.Controls.Add(this.lblService);
-            this.grpPersonnel.Controls.Add(this.txtMail);
-            this.grpPersonnel.Controls.Add(this.lblMail);
-            this.grpPersonnel.Controls.Add(this.txtTel);
-            this.grpPersonnel.Controls.Add(this.txtPrenom);
-            this.grpPersonnel.Controls.Add(this.txtNom);
-            this.grpPersonnel.Controls.Add(this.lblTel);
-            this.grpPersonnel.Controls.Add(this.lblPrenom);
-            this.grpPersonnel.Controls.Add(this.lblNom);
-            this.grpPersonnel.Location = new System.Drawing.Point(29, 488);
-            this.grpPersonnel.Name = "grpPersonnel";
-            this.grpPersonnel.Size = new System.Drawing.Size(866, 293);
-            this.grpPersonnel.TabIndex = 5;
-            this.grpPersonnel.TabStop = false;
-            this.grpPersonnel.Text = "Personnel";
-            // 
-            // lblNom
-            // 
-            this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(33, 56);
-            this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(42, 20);
-            this.lblNom.TabIndex = 0;
-            this.lblNom.Text = "Nom";
-            // 
-            // lblPrenom
-            // 
-            this.lblPrenom.AutoSize = true;
-            this.lblPrenom.Location = new System.Drawing.Point(33, 112);
-            this.lblPrenom.Name = "lblPrenom";
-            this.lblPrenom.Size = new System.Drawing.Size(64, 20);
-            this.lblPrenom.TabIndex = 1;
-            this.lblPrenom.Text = "Prenom";
-            // 
-            // lblTel
-            // 
-            this.lblTel.AutoSize = true;
-            this.lblTel.Location = new System.Drawing.Point(448, 56);
-            this.lblTel.Name = "lblTel";
-            this.lblTel.Size = new System.Drawing.Size(84, 20);
-            this.lblTel.TabIndex = 2;
-            this.lblTel.Text = "Téléphone";
-            // 
-            // txtNom
-            // 
-            this.txtNom.Location = new System.Drawing.Point(145, 50);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(261, 26);
-            this.txtNom.TabIndex = 3;
-            // 
-            // txtPrenom
-            // 
-            this.txtPrenom.Location = new System.Drawing.Point(145, 106);
-            this.txtPrenom.Name = "txtPrenom";
-            this.txtPrenom.Size = new System.Drawing.Size(261, 26);
-            this.txtPrenom.TabIndex = 4;
-            // 
-            // txtTel
-            // 
-            this.txtTel.Location = new System.Drawing.Point(574, 56);
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(261, 26);
-            this.txtTel.TabIndex = 5;
-            // 
-            // lblMail
-            // 
-            this.lblMail.AutoSize = true;
-            this.lblMail.Location = new System.Drawing.Point(448, 112);
-            this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(37, 20);
-            this.lblMail.TabIndex = 6;
-            this.lblMail.Text = "Mail";
-            // 
-            // txtMail
-            // 
-            this.txtMail.Location = new System.Drawing.Point(574, 106);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(261, 26);
-            this.txtMail.TabIndex = 7;
-            // 
-            // lblService
-            // 
-            this.lblService.AutoSize = true;
-            this.lblService.Location = new System.Drawing.Point(448, 168);
-            this.lblService.Name = "lblService";
-            this.lblService.Size = new System.Drawing.Size(61, 20);
-            this.lblService.TabIndex = 8;
-            this.lblService.Text = "Service";
-            // 
-            // cboService
-            // 
-            this.cboService.FormattingEnabled = true;
-            this.cboService.Location = new System.Drawing.Point(574, 160);
-            this.cboService.Name = "cboService";
-            this.cboService.Size = new System.Drawing.Size(261, 28);
-            this.cboService.TabIndex = 9;
-            // 
-            // btnEnregistrer
-            // 
-            this.btnEnregistrer.Location = new System.Drawing.Point(37, 213);
-            this.btnEnregistrer.Name = "btnEnregistrer";
-            this.btnEnregistrer.Size = new System.Drawing.Size(184, 54);
-            this.btnEnregistrer.TabIndex = 10;
-            this.btnEnregistrer.Text = "Enregistrer";
-            this.btnEnregistrer.UseVisualStyleBackColor = true;
+            this.grbPersonnel.Controls.Add(this.btnAnnuler);
+            this.grbPersonnel.Controls.Add(this.btnEnregistrer);
+            this.grbPersonnel.Controls.Add(this.cboService);
+            this.grbPersonnel.Controls.Add(this.lblService);
+            this.grbPersonnel.Controls.Add(this.txtMail);
+            this.grbPersonnel.Controls.Add(this.lblMail);
+            this.grbPersonnel.Controls.Add(this.txtTel);
+            this.grbPersonnel.Controls.Add(this.txtPrenom);
+            this.grbPersonnel.Controls.Add(this.txtNom);
+            this.grbPersonnel.Controls.Add(this.lblTel);
+            this.grbPersonnel.Controls.Add(this.lblPrenom);
+            this.grbPersonnel.Controls.Add(this.lblNom);
+            this.grbPersonnel.Location = new System.Drawing.Point(29, 488);
+            this.grbPersonnel.Name = "grbPersonnel";
+            this.grbPersonnel.Size = new System.Drawing.Size(866, 293);
+            this.grbPersonnel.TabIndex = 5;
+            this.grbPersonnel.TabStop = false;
+            this.grbPersonnel.Text = "Personnel";
             // 
             // btnAnnuler
             // 
@@ -216,12 +126,102 @@
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             // 
+            // btnEnregistrer
+            // 
+            this.btnEnregistrer.Location = new System.Drawing.Point(37, 213);
+            this.btnEnregistrer.Name = "btnEnregistrer";
+            this.btnEnregistrer.Size = new System.Drawing.Size(184, 54);
+            this.btnEnregistrer.TabIndex = 10;
+            this.btnEnregistrer.Text = "Enregistrer";
+            this.btnEnregistrer.UseVisualStyleBackColor = true;
+            // 
+            // cboService
+            // 
+            this.cboService.FormattingEnabled = true;
+            this.cboService.Location = new System.Drawing.Point(574, 160);
+            this.cboService.Name = "cboService";
+            this.cboService.Size = new System.Drawing.Size(261, 28);
+            this.cboService.TabIndex = 9;
+            // 
+            // lblService
+            // 
+            this.lblService.AutoSize = true;
+            this.lblService.Location = new System.Drawing.Point(448, 168);
+            this.lblService.Name = "lblService";
+            this.lblService.Size = new System.Drawing.Size(61, 20);
+            this.lblService.TabIndex = 8;
+            this.lblService.Text = "Service";
+            // 
+            // txtMail
+            // 
+            this.txtMail.Location = new System.Drawing.Point(574, 106);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(261, 26);
+            this.txtMail.TabIndex = 7;
+            // 
+            // lblMail
+            // 
+            this.lblMail.AutoSize = true;
+            this.lblMail.Location = new System.Drawing.Point(448, 112);
+            this.lblMail.Name = "lblMail";
+            this.lblMail.Size = new System.Drawing.Size(37, 20);
+            this.lblMail.TabIndex = 6;
+            this.lblMail.Text = "Mail";
+            // 
+            // txtTel
+            // 
+            this.txtTel.Location = new System.Drawing.Point(574, 56);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(261, 26);
+            this.txtTel.TabIndex = 5;
+            // 
+            // txtPrenom
+            // 
+            this.txtPrenom.Location = new System.Drawing.Point(145, 106);
+            this.txtPrenom.Name = "txtPrenom";
+            this.txtPrenom.Size = new System.Drawing.Size(261, 26);
+            this.txtPrenom.TabIndex = 4;
+            // 
+            // txtNom
+            // 
+            this.txtNom.Location = new System.Drawing.Point(145, 50);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(261, 26);
+            this.txtNom.TabIndex = 3;
+            // 
+            // lblTel
+            // 
+            this.lblTel.AutoSize = true;
+            this.lblTel.Location = new System.Drawing.Point(448, 56);
+            this.lblTel.Name = "lblTel";
+            this.lblTel.Size = new System.Drawing.Size(84, 20);
+            this.lblTel.TabIndex = 2;
+            this.lblTel.Text = "Téléphone";
+            // 
+            // lblPrenom
+            // 
+            this.lblPrenom.AutoSize = true;
+            this.lblPrenom.Location = new System.Drawing.Point(33, 112);
+            this.lblPrenom.Name = "lblPrenom";
+            this.lblPrenom.Size = new System.Drawing.Size(64, 20);
+            this.lblPrenom.TabIndex = 1;
+            this.lblPrenom.Text = "Prenom";
+            // 
+            // lblNom
+            // 
+            this.lblNom.AutoSize = true;
+            this.lblNom.Location = new System.Drawing.Point(33, 56);
+            this.lblNom.Name = "lblNom";
+            this.lblNom.Size = new System.Drawing.Size(42, 20);
+            this.lblNom.TabIndex = 0;
+            this.lblNom.Text = "Nom";
+            // 
             // FrmPersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 802);
-            this.Controls.Add(this.grpPersonnel);
+            this.Controls.Add(this.grbPersonnel);
             this.Controls.Add(this.btnAbsences);
             this.Controls.Add(this.btnSupprimer);
             this.Controls.Add(this.btnModifier);
@@ -230,9 +230,10 @@
             this.Name = "FrmPersonnel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion du personnel";
+            this.Load += new System.EventHandler(this.FrmPersonnel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonnel)).EndInit();
-            this.grpPersonnel.ResumeLayout(false);
-            this.grpPersonnel.PerformLayout();
+            this.grbPersonnel.ResumeLayout(false);
+            this.grbPersonnel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -244,7 +245,7 @@
         private System.Windows.Forms.Button btnModifier;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnAbsences;
-        private System.Windows.Forms.GroupBox grpPersonnel;
+        private System.Windows.Forms.GroupBox grbPersonnel;
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Label lblMail;

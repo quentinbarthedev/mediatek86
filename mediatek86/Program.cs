@@ -3,9 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using mediatek86.view;
 
 namespace mediatek86
 {
+    /// <summary>
+    /// Application de gestion du personnel et des absences de MediaTek86
+    /// </summary>
+    internal class NamespaceDoc
+    {
+    }
     internal static class Program
     {
         /// <summary>

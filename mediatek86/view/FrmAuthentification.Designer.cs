@@ -1,4 +1,4 @@
-﻿namespace mediatek86
+﻿namespace mediatek86.view
 {
     partial class FrmAuthentification
     {
@@ -112,6 +112,7 @@
             this.Name = "FrmAuthentification";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Authentification";
+            this.Load += new System.EventHandler(this.FrmAuthentification_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
