@@ -28,32 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNom = new System.Windows.Forms.Label();
-            this.lblPrenom = new System.Windows.Forms.Label();
+            this.lblLogin = new System.Windows.Forms.Label();
             this.lblPwd = new System.Windows.Forms.Label();
-            this.txtNom = new System.Windows.Forms.TextBox();
-            this.txtPrenom = new System.Windows.Forms.TextBox();
+            this.txtLogin = new System.Windows.Forms.TextBox();
             this.txtPwd = new System.Windows.Forms.TextBox();
             this.btnConnexion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblNom
+            // lblLogin
             // 
-            this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(48, 65);
-            this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(42, 20);
-            this.lblNom.TabIndex = 0;
-            this.lblNom.Text = "Nom";
-            // 
-            // lblPrenom
-            // 
-            this.lblPrenom.AutoSize = true;
-            this.lblPrenom.Location = new System.Drawing.Point(48, 116);
-            this.lblPrenom.Name = "lblPrenom";
-            this.lblPrenom.Size = new System.Drawing.Size(64, 20);
-            this.lblPrenom.TabIndex = 1;
-            this.lblPrenom.Text = "Prénom";
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Location = new System.Drawing.Point(48, 91);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(48, 20);
+            this.lblLogin.TabIndex = 0;
+            this.lblLogin.Text = "Login";
             // 
             // lblPwd
             // 
@@ -64,19 +53,12 @@
             this.lblPwd.TabIndex = 2;
             this.lblPwd.Text = "Mot de passe";
             // 
-            // txtNom
+            // txtLogin
             // 
-            this.txtNom.Location = new System.Drawing.Point(185, 62);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(422, 26);
-            this.txtNom.TabIndex = 3;
-            // 
-            // txtPrenom
-            // 
-            this.txtPrenom.Location = new System.Drawing.Point(185, 110);
-            this.txtPrenom.Name = "txtPrenom";
-            this.txtPrenom.Size = new System.Drawing.Size(422, 26);
-            this.txtPrenom.TabIndex = 4;
+            this.txtLogin.Location = new System.Drawing.Point(185, 85);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(422, 26);
+            this.txtLogin.TabIndex = 3;
             // 
             // txtPwd
             // 
@@ -88,12 +70,13 @@
             // 
             // btnConnexion
             // 
-            this.btnConnexion.Location = new System.Drawing.Point(312, 247);
+            this.btnConnexion.Location = new System.Drawing.Point(301, 268);
             this.btnConnexion.Name = "btnConnexion";
             this.btnConnexion.Size = new System.Drawing.Size(142, 35);
             this.btnConnexion.TabIndex = 6;
             this.btnConnexion.Text = "Connexion";
             this.btnConnexion.UseVisualStyleBackColor = true;
+            this.btnConnexion.Click += new System.EventHandler(this.BtnConnexion_Click);
             // 
             // FrmAuthentification
             // 
@@ -102,11 +85,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnConnexion);
             this.Controls.Add(this.txtPwd);
-            this.Controls.Add(this.txtPrenom);
-            this.Controls.Add(this.txtNom);
+            this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.lblPwd);
-            this.Controls.Add(this.lblPrenom);
-            this.Controls.Add(this.lblNom);
+            this.Controls.Add(this.lblLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmAuthentification";
@@ -120,11 +101,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblNom;
-        private System.Windows.Forms.Label lblPrenom;
+        private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Label lblPwd;
-        private System.Windows.Forms.TextBox txtNom;
-        private System.Windows.Forms.TextBox txtPrenom;
+        private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.TextBox txtPwd;
         private System.Windows.Forms.Button btnConnexion;
     }

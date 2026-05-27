@@ -52,6 +52,7 @@
             // 
             // dgvPersonnel
             // 
+            this.dgvPersonnel.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvPersonnel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPersonnel.Location = new System.Drawing.Point(29, 23);
             this.dgvPersonnel.Name = "dgvPersonnel";
@@ -68,6 +69,7 @@
             this.btnAjouter.TabIndex = 1;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnModifier
             // 
@@ -77,6 +79,7 @@
             this.btnModifier.TabIndex = 2;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // btnSupprimer
             // 
@@ -86,6 +89,7 @@
             this.btnSupprimer.TabIndex = 3;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnAbsences
             // 
@@ -95,6 +99,7 @@
             this.btnAbsences.TabIndex = 4;
             this.btnAbsences.Text = "Gérer les absences";
             this.btnAbsences.UseVisualStyleBackColor = true;
+            this.btnAbsences.Click += new System.EventHandler(this.btnAbsences_Click);
             // 
             // grbPersonnel
             // 
@@ -125,6 +130,7 @@
             this.btnAnnuler.TabIndex = 11;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnEnregistrer
             // 
@@ -134,6 +140,7 @@
             this.btnEnregistrer.TabIndex = 10;
             this.btnEnregistrer.Text = "Enregistrer";
             this.btnEnregistrer.UseVisualStyleBackColor = true;
+            this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
             // cboService
             // 

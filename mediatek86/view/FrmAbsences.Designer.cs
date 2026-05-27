@@ -47,6 +47,7 @@
             // 
             // dgvAbsences
             // 
+            this.dgvAbsences.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvAbsences.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAbsences.Location = new System.Drawing.Point(23, 22);
             this.dgvAbsences.Name = "dgvAbsences";
@@ -63,6 +64,7 @@
             this.btnAjouter.TabIndex = 1;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnModifier
             // 
@@ -72,6 +74,7 @@
             this.btnModifier.TabIndex = 2;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // btnSupprimer
             // 
@@ -81,6 +84,7 @@
             this.btnSupprimer.TabIndex = 3;
             this.btnSupprimer.Text = "Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // grbAbsence
             // 
@@ -107,6 +111,7 @@
             this.btnAnnuler.TabIndex = 7;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnEnregistrer
             // 
@@ -116,6 +121,7 @@
             this.btnEnregistrer.TabIndex = 6;
             this.btnEnregistrer.Text = "Enregistrer";
             this.btnEnregistrer.UseVisualStyleBackColor = true;
+            this.btnEnregistrer.Click += new System.EventHandler(this.btnEnregistrer_Click);
             // 
             // cboMotif
             // 
@@ -136,15 +142,16 @@
             // 
             // dtpDateFin
             // 
-            this.dtpDateFin.Location = new System.Drawing.Point(529, 56);
+            this.dtpDateFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDateFin.Location = new System.Drawing.Point(498, 63);
             this.dtpDateFin.Name = "dtpDateFin";
-            this.dtpDateFin.Size = new System.Drawing.Size(142, 26);
+            this.dtpDateFin.Size = new System.Drawing.Size(137, 26);
             this.dtpDateFin.TabIndex = 3;
             // 
             // lblDateDebut
             // 
             this.lblDateDebut.AutoSize = true;
-            this.lblDateDebut.Location = new System.Drawing.Point(62, 62);
+            this.lblDateDebut.Location = new System.Drawing.Point(107, 63);
             this.lblDateDebut.Name = "lblDateDebut";
             this.lblDateDebut.Size = new System.Drawing.Size(89, 20);
             this.lblDateDebut.TabIndex = 2;
@@ -152,15 +159,16 @@
             // 
             // dtpDateDebut
             // 
-            this.dtpDateDebut.Location = new System.Drawing.Point(178, 56);
+            this.dtpDateDebut.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDateDebut.Location = new System.Drawing.Point(234, 61);
             this.dtpDateDebut.Name = "dtpDateDebut";
-            this.dtpDateDebut.Size = new System.Drawing.Size(193, 26);
+            this.dtpDateDebut.Size = new System.Drawing.Size(137, 26);
             this.dtpDateDebut.TabIndex = 1;
             // 
             // lblDateFin
             // 
             this.lblDateFin.AutoSize = true;
-            this.lblDateFin.Location = new System.Drawing.Point(447, 62);
+            this.lblDateFin.Location = new System.Drawing.Point(414, 66);
             this.lblDateFin.Name = "lblDateFin";
             this.lblDateFin.Size = new System.Drawing.Size(65, 20);
             this.lblDateFin.TabIndex = 0;
