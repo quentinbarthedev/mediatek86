@@ -52,7 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bddmanager\BddManager.cs" />
+    <Compile Include="dal\AbsenceAccess.cs" />
     <Compile Include="dal\Access.cs" />
+    <Compile Include="dal\MotifAccess.cs" />
+    <Compile Include="dal\PersonnelAccess.cs" />
+    <Compile Include="dal\ResponsableAccess.cs" />
+    <Compile Include="dal\ServiceAccess.cs" />
     <Compile Include="model\Absence.cs" />
     <Compile Include="model\Motif.cs" />
     <Compile Include="model\Personnel.cs" />
