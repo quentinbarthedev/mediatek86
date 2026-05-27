@@ -5,6 +5,13 @@ using System;
 namespace mediatek86.controller
 {
     /// <summary>
+    /// Package contenant les contrôleurs de l'application.
+    /// </summary>
+    internal class NamespaceDoc
+    {
+    }
+
+    /// <summary>
     /// Contrôleur de FrmAuthentification
     /// </summary>
     public class FrmAuthentificationController
