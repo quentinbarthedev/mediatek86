@@ -24,8 +24,19 @@ namespace mediatek86.model
             this.Motif = motif;
         }
 
+        /// <summary>
+        /// Date de début de l'absence
+        /// </summary>
         public DateTime Datedebut { get; set; }
+
+        /// <summary>
+        /// Date de fin de l'absence
+        /// </summary>
         public DateTime Datefin { get; set; }
+
+        /// <summary>
+        /// Motif de l'absence
+        /// </summary>
         public Motif Motif { get; set; }
     }
 }

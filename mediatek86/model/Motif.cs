@@ -11,7 +11,14 @@ namespace mediatek86.model
     /// </summary>
     public class Motif
     {
+        /// <summary>
+        /// Id du motif
+        /// </summary>
         public int Idmotif { get; }
+
+        /// <summary>
+        /// Libellé du motif
+        /// </summary>
         public string Libelle { get; }
 
         /// <summary>

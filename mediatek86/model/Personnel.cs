@@ -37,11 +37,34 @@ namespace mediatek86.model
             this.Service = service;
         }
 
+        /// <summary>
+        /// Id du personnel
+        /// </summary>
         public int Idpersonnel { get; }
+
+        /// <summary>
+        /// Nom du personnel
+        /// </summary>
         public string Nom { get; set; }
+
+        /// <summary>
+        /// Prénom du personnel
+        /// </summary>
         public string Prenom { get; set; }
+
+        /// <summary>
+        /// Téléphone du personnel
+        /// </summary>
         public string Tel { get; set; }
+
+        /// <summary>
+        /// Mail du personnel
+        /// </summary>
         public string Mail { get; set; }
+
+        /// <summary>
+        /// Service du personnel
+        /// </summary>
         public Service Service { get; set; }
     }
 }
