@@ -65,5 +65,10 @@ namespace mediatek86.view
         {
 
         }
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
